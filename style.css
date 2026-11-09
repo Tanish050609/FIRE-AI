@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b1118;
+    color: #eaf5ff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    padding: 22px 5%;
+    border-bottom: 1px solid #203443;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fire-icon {
+    font-size: 36px;
+}
+
+h1 {
+    color: #00d9ff;
+    letter-spacing: 3px;
+}
+
+.brand p, .eyebrow {
+    color: #8195a7;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.connection {
+    color: #00e5a0;
+    font-size: 12px;
+}
+
+.dot {
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #00e5a0;
+    margin-right: 8px;
+}
+
+main {
+    padding: 45px 5%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.hero p {
+    color: #8295a7;
+}
+
+.status-card, .panel {
+    background: #111d28;
+    border: 1px solid #233747;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.status-card {
+    display: flex;
+    align-items: center;
+}
+
+.status-card small {
+    display: block;
+    color: #00e5a0;
+    margin-top: 6px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 22px;
+}
+
+.panel h3 {
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+.panel p {
+    color: #8498aa;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.middle {
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    border: 1px solid #00bfe5;
+    background: #142c3b;
+    color: white;
+    border-radius: 10px;
+    padding: 17px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+button:hover {
+    background: #006c83;
+}
+
+.stop, .pump-off {
+    background: #8d2525;
+    border-color: #ff5555;
+}
+
+.pump-icon {
+    font-size: 55px;
+    text-align: center;
+    margin: 25px;
+}
+
+.pump-on, .pump-off {
+    width: 100%;
+    margin: 6px 0;
+}
+
+.pump-on {
+    background: #087f5b;
+    border-color: #00e5a0;
+}
+
+#pumpStatus {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.status-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #253746;
+    font-size: 13px;
+}
+
+.status-row strong {
+    color: #00e5a0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #62798b;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+@media(max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

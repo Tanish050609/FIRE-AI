@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE AI | Command Center</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <div class="brand">
+        <span class="fire-icon">🔥</span>
+        <div>
+            <h1>FIRE AI</h1>
+            <p>AUTONOMOUS DISASTER RESPONSE SYSTEM</p>
+        </div>
+    </div>
+    <div class="connection">
+        <span class="dot"></span> COMMAND CENTER
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div>
+            <p class="eyebrow">ROBOTICS CONTROL SYSTEM</p>
+            <h2>Rover Command Center</h2>
+            <p>Remote operation and emergency response interface.</p>
+        </div>
+        <div class="status-card">
+            <span class="dot"></span>
+            <div>
+                <strong>CONTROL PANEL</strong>
+                <small id="connectionStatus">READY</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid">
+
+        <div class="panel movement">
+            <h3>Movement Control</h3>
+            <p>Manual rover navigation</p>
+
+            <div class="controls">
+                <button class="move up" data-direction="F">▲</button>
+
+                <div class="middle">
+                    <button class="move" data-direction="L">◀</button>
+                    <button class="stop" id="stopBtn">STOP</button>
+                    <button class="move" data-direction="R">▶</button>
+                </div>
+
+                <button class="move down" data-direction="B">▼</button>
+            </div>
+        </div>
+
+        <div class="panel pump-panel">
+            <h3>Fire Suppression</h3>
+            <p>Water pump control</p>
+
+            <div class="pump-icon">💧</div>
+
+            <button class="pump-on" id="pumpOn">PUMP ON</button>
+            <button class="pump-off" id="pumpOff">PUMP OFF</button>
+
+            <p id="pumpStatus">Pump: OFF</p>
+        </div>
+
+        <div class="panel system-panel">
+            <h3>System Status</h3>
+            <div class="status-row">
+                <span>Rover</span><strong>CONTROL MODE</strong>
+            </div>
+            <div class="status-row">
+                <span>Navigation</span><strong>MANUAL</strong>
+            </div>
+            <div class="status-row">
+                <span>Suppression</span><strong id="pumpState">OFF</strong>
+            </div>
+            <div class="status-row">
+                <span>Controller</span><strong>ESP32</strong>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer>FIRE AI • DETECT • RELAY • DISPATCH • RESPOND</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
